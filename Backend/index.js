@@ -14,7 +14,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://shopshpere-frontend.onrender.com",
+      "https://shopsphere-frontend.onrender.com",
     ],
     credentials: true,
   }),
@@ -30,7 +30,7 @@ app.use("/api/auth/", userRoutes);
 app.use("/api/auth/products", productRoutes);
 app.use("/api/auth/orders", orderRoutes);
 app.use("/api/auth/payment", paymentRoutes);
-app.use("api/auth/analytics", analyticsRoutes);
+app.use("/api/auth/analytics", analyticsRoutes);
 
 const PORT = process.env.PORT || 5000;
 connectDB();
