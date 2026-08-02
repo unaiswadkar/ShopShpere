@@ -28,7 +28,7 @@ const Checkout = () => {
   // -----------------------------
   const bypassPayment = async () => {
     try {
-      const res = await fetch("https://shopshpere-ej3z.onrender.com/api/auth/orders", {
+      const res = await fetch("/api/auth/orders", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -63,7 +63,7 @@ const Checkout = () => {
   // -----------------------------
   const handlePayment = async () => {
     try {
-      const orderRes = await fetch("https://shopshpere-ej3z.onrender.com/api/auth/payment/order", {
+      const orderRes = await fetch("/api/auth/payment/order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -116,7 +116,7 @@ const Checkout = () => {
 
         handler: async function (response) {
           try {
-            const verifyRes = await fetch("https://shopshpere-ej3z.onrender.com/api/auth/payment/verify", {
+            const verifyRes = await fetch("/api/auth/payment/verify", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -129,7 +129,7 @@ const Checkout = () => {
               return;
             }
 
-            const saveRes = await fetch("https://shopshpere-ej3z.onrender.com/api/auth/orders", {
+            const saveRes = await fetch("/api/auth/orders", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",

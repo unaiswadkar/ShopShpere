@@ -42,7 +42,7 @@ const AddProduct = () => {
     data.append("image", image);
 
     try {
-      const res = await fetch("https://shopshpere-ej3z.onrender.com/api/auth/products", {
+      const res = await fetch("/api/auth/products", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${user.token}`,

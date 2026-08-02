@@ -13,7 +13,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await fetch(`https://shopshpere-ej3z.onrender.com/api/auth/products/${id}`);
+        const res = await fetch(`/api/auth/products/${id}`);
         const data = await res.json();
         setProduct(data);
       } catch (error) {
