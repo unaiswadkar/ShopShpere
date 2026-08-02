@@ -12,7 +12,10 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: ["http://localhost:5137", "http://localhost:3000"],
+    origin: [
+      "http://localhost:5173",
+      "https://shopshpere-frontend.onrender.com",
+    ],
     credentials: true,
   }),
 );
