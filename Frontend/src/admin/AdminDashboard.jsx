@@ -15,7 +15,7 @@ const AdminDashboard = () => {
 
     const fetchStats = async () => {
       try {
-        const res = await fetch("/api/auth/analytics", {
+        const res = await fetch("https://shopshpere-ej3z.onrender.com/api/auth/analytics", {
           headers: { Authorization: `Bearer ${user.token}` },
         });
         const data = await res.json();

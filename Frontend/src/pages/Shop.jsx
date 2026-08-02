@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
 
-
 const Shop = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -10,7 +9,9 @@ const Shop = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch("/api/auth/products");
+        const res = await fetch(
+          "https://shopshpere-ej3z.onrender.com/api/auth/products",
+        );
         const data = await res.json();
         setProducts(data);
       } catch (error) {
