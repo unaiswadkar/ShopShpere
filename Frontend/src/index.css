@@ -130,6 +130,11 @@ h2 {
   text-shadow: 0 2px 10px rgba(249, 115, 22, 0.3);
 }
 
+.ShopSphere-logo{
+  scale: 250%;
+padding-left: px;
+}
+
 .navbar-brand a::after {
   content: ".";
   color: #f97316;
