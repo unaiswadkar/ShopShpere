@@ -80,7 +80,8 @@ const seedData = async () => {
         price: 129999,
         category: "Electronics",
         stock: 20,
-        imageUrl: "https://picsum.photos/400/400?random=1",
+        imageUrl:
+          "https://suprememobiles.in/cdn/shop/files/1_78a803af-e5a5-441a-a9b7-3b9f7affdfd8.webp?v=1769864108",
         rating: 4.9,
         numReviews: 125,
       },
@@ -90,7 +91,8 @@ const seedData = async () => {
         price: 109999,
         category: "Electronics",
         stock: 18,
-        imageUrl: "https://picsum.photos/400/400?random=2",
+        imageUrl:
+          "https://images.samsung.com/in/smartphones/galaxy-s25/buy/product_color_navy_PC.png",
         rating: 4.8,
         numReviews: 110,
       },
