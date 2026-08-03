@@ -17,7 +17,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-brand">
         <Link to="/">
-          <img className="ShopSphere-logo"
+          <img
+            className="ShopSphere-logo"
             src="./public/logo.png"
             alt="ShopNest"
             style={{
